@@ -58,7 +58,7 @@ git clone <repository-url>
 cd sub-pro
 ```
 
-Or place subprober.py in your desired directory.
+Or place subdomain-prober.py in your desired directory.
 
 2. Install Python dependencies
 
@@ -73,36 +73,36 @@ pip3 install -r requirements.txt
 3. Make the script executable (optional)
 
 ```bash
-chmod +x subprober.py
+chmod +x subdomain-prober.py
 ```
 
 How to Run
 Basic usage
 ```bash
-python3 subprober.py example.com
+python3 subdomain-prober.py example.com
 ```
 Scan multiple domains
 ```bash
-python3 subprober.py example.com test.com
+python3 subdomain-prober.py example.com test.com
 ```
 
 Specify output directory
 ```bash
-python3 subprober.py example.com --outdir results
+python3 subdomain-prober.py example.com --outdir results
 ```
 Run with custom status codes
 ```bash
-python3 subprober.py example.com --status 200,302,401,403
+python3 subdomain-prober.py example.com --status 200,302,401,403
 ```
 Run with threading enabled
 ```bash
 
-python3 subprober.py example.com --threads 50
+python3 subdomain-prober.py example.com --threads 50
 ```
 Full example (recommended)
 ```bash
 
-python3 subprober.py example.com \
+python3 subdomain-prober.py example.com \
   --outdir recon-results \
   --threads 50 \
   --status 200,301,401,403 \
@@ -110,11 +110,11 @@ python3 subprober.py example.com \
 ```
 Verbose (debug) mode
 ```bash
-python3 subprober.py example.com -v
+python3 subdomain-prober.py example.com -v
 ```
 Run as executable
 ```bash
-./subprober.py example.com
+./subdomain-prober.py example.com
 ```
 
 ### Output Structure
