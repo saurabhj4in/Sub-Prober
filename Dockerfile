@@ -15,4 +15,4 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT ["python3", "subprober.py"]
+ENTRYPOINT ["python3", "subdomain-prober.py"]
